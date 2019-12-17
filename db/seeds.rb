@@ -15,9 +15,9 @@ string_converter = lambda {|field|
        else
          field.downcase.gsub(' ', '_')
        end
-   rescue ArgumentError
-     field
-   end
+  rescue ArgumentError
+   field
+  end
 }
 
 CSV.foreach(Rails.root.join('lib/Test_Sales_History.csv'),
