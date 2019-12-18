@@ -5,6 +5,5 @@
   .form-group
     = label_tag 'max', 'Set Max Trans Total extax value', class: 'control-label'
     = number_field_tag :max, params[:max], min: 1, max: 2500000, class: 'form-control'
-
     = submit_tag 'Set', :class => "btn btn-primary my-2"
 
