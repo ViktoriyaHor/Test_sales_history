@@ -14,7 +14,7 @@ FactoryBot.define do
     trans_document_number { Faker::Code.nric }
     trans_reference_number { Faker::Code.nric }
     trans_quantity { Faker::Number.number(digits: 2) }
-    trans_total_extax_value{ Faker::Number.decimal(l_digits: 5, r_digits: 2) }
+    trans_total_extax_value { Faker::Number.decimal(l_digits: 5, r_digits: 2) }
     trans_total_tax { Faker::Number.decimal(l_digits: 5, r_digits: 2) }
     trans_total_discount_given { Faker::Number.decimal(l_digits: 5, r_digits: 2) }
   end
