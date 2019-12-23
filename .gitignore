@@ -30,7 +30,6 @@
 yarn-debug.log*
 .yarn-integrity
 
-/lib/Test_Sales_History.csv
 /.idea
 /.ruby-gemset
 # Ignore application configuration
