@@ -36,16 +36,16 @@ $ curl https://damp-anchorage-55465.herokuapp.com/
 ```
 You should get:
 
-Loading... the graph with options {"library":{"scales":{"xAxes":[{"ticks":{"min":1,"stepSize":1}}]}},"xtitle":"Months","ytitle":"Trans Total extax value","max":null});
+The graph rendered
 
 You can pass by the parameter the maximum value on the scale Trans Total extax value. For example params[:max] = 20000
 
 ```
 $ curl https://damp-anchorage-55465.herokuapp.com/?max=20000
 ```
-Geting plot with max Trans Total extax value 20000:
+Getting plot with max Trans Total extax value 20000:
 
-Loading...the graph with options {"library":{"scales":{"xAxes":[{"ticks":{"min":1,"stepSize":1}}]}},"xtitle":"Months","ytitle":"Trans Total extax value","max":"20000"});
+The graph with max Trans Total extax value rendered
 
 ## Running the tests
 
