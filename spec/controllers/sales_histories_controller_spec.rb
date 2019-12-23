@@ -23,10 +23,10 @@ RSpec.describe SalesHistoriesController, type: :controller do
     end
 
     it 'assigns @data' do
-      expect(assigns(:data)).to eq([ { name: 2016, data: { 12 => 11 } },
-                                     { name: 2017, data: { 12 => 12 } },
-                                     { name: 2018, data: { 12 => 13 } }
-                                   ])
+      expect(assigns(:data)).to eq( [2016, 12] => 11,
+                                     [2017, 12] => 12,
+                                     [2018, 12]=> 13
+                                   )
     end
   end
 end

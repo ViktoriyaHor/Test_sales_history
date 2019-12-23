@@ -7,8 +7,8 @@ class SalesHistory < ApplicationRecord
             :trans_quantity, :trans_total_extax_value, :trans_total_tax,
             :trans_total_discount_given, presence: true
 
-  def self.by_month(year)
-    where('extract(year from trans_date) = ?', year).group('month(trans_date)')
-                                                    .sum(:trans_total_extax_value)
+  def self.by_months
+    SalesHistory.group("year(trans_date)").group("month(trans_date)")
+        .sum(:trans_total_extax_value)
   end
 end

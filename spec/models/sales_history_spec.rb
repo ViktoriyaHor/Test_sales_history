@@ -38,7 +38,7 @@ RSpec.describe SalesHistory, type: :model do
     end
   end
 
-  describe 'method self.by_month(year)' do
+  describe 'method self.by_months' do
     4.times do |i|
       i += 1
       let!(:"sales_history_#{i}") { create(:sales_history, trans_total_extax_value: 10,
@@ -46,11 +46,8 @@ RSpec.describe SalesHistory, type: :model do
     end
 
     it "retuns data with a valid parameter" do
-      expect(SalesHistory.by_month(2019)).to eq({ 12 => 40 })
+      expect(SalesHistory.by_months).to eq( [2019, 12] => 40 )
     end
 
-    it "retuns data with a parameter nill" do
-      expect(SalesHistory.by_month(nil)).to eq({})
-    end
   end
 end
